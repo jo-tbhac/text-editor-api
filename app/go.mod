@@ -1,4 +1,4 @@
-module text-editor
+module github.com/jo-tbhac/text-editor-api
 
 go 1.21
 

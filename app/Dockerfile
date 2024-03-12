@@ -4,9 +4,11 @@ RUN apk update && apk add git
 
 ENV TZ /usr/share/zoneinfo/Asia/Tokyo
 
-WORKDIR /app
+RUN mkdir -p /github.com/jo-tbhac/text-editor-api
 
-COPY ./* ./
+WORKDIR /github.com/jo-tbhac/text-editor-api
+
+COPY . /github.com/jo-tbhac/text-editor-api
 
 RUN go mod download
 
